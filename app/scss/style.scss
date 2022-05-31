@@ -119,4 +119,47 @@
 }
 //end services
 
+//start portfolio
+.portfolio{
+  padding-bottom: 68px;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(187, 133, 255, 0.14) 0%, rgba(255, 177, 222, 0.14) 100%);
+    filter: blur(150px);
+  }
+  &__img{
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__title{
+    margin-bottom: 30px;
+  }
+  &__link{
+    font-size: 24px;
+    color: $dark;
+    font-weight: 500;
+    padding-right: 34px;
+    &::after{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../images/icons/arrow-right.svg);
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+//end portfolio
+
 @import 'media';
