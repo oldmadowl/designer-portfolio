@@ -1,5 +1,6 @@
 $text: #47444E;
 $dark: #25202F;
+$lilac: #8643DC;
 
 %btn{
   font-weight: 500;
@@ -9,7 +10,7 @@ $dark: #25202F;
   color: #fff;
   width: 200px;
   height: 60px;
-  background-color: #8643DC;
+  background-color: $lilac;
   border-radius: 100px;
   transition: all .3s;
   bottom: 0;

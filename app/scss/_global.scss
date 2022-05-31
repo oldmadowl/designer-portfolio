@@ -50,3 +50,32 @@ body{
 .wrapper{
   max-width: 1920px;
 }
+.suptitle{
+  color: $lilac;
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  &:hover{
+    color: $lilac;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 50px;
+    background-color: $lilac;
+  }
+}
+.title{
+  color: $dark;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  span{
+    display: block;
+  }
+}
