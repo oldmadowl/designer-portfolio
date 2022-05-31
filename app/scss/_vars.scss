@@ -1,0 +1,27 @@
+$text: #47444E;
+$dark: #25202F;
+
+%btn{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  width: 200px;
+  height: 60px;
+  background-color: #8643DC;
+  border-radius: 100px;
+  transition: all .3s;
+  bottom: 0;
+  left: 0;
+  &:hover{
+    bottom: 5px;
+    left: 2px;
+    color: #fff;
+    box-shadow: -2px 5px #000;
+  }
+  &:active{
+    bottom: 2px;
+    box-shadow: -1px 2px #000;
+  }
+}

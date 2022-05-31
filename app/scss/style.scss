@@ -3,5 +3,66 @@
 @import 'global';
 
 
+//start header
+.header{
+  &__wrapper{
+    background-image: url(../images/backgrounds/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: top 22px right 38px;
+    background-size: contain;
+  }
+  &__top{
+    height: 170px;
+  }
+  &__offer{
+    margin-top: 50px;
+    padding-bottom: 268px;
+    &-title{
+      font-size: 60px;
+      line-height: 72px;
+      color: $dark;
+      margin-bottom: 20px;
+      span{
+        color: #666;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
+        display: block;
+      }
+    }
+    &-subtitle{
+      font-size: 24px;
+      line-height: 32px;
+      color: $dark;
+      margin-bottom: 50px;
+    }
+  }
+  &__btn{
+    @extend %btn;
+  }
+}
+.menu{
+  margin-left: 100px;
+  &__item + &__item{
+    margin-left: 40px;
+  }
+  &__link{
+    font-size: 20px;
+    line-height: 23px;
+    color: #7E7F86;
+    font-weight: 500;
+    transition: all .3s;
+    &:hover{
+      color: #25202F;
+    }
+  }
+}
+.menu-btn{
+  box-shadow: 0px 20px 50px rgba(198, 185, 233, 0.3);
+  width: 70px;
+  height: 70px;
+  display: none;
+}
+//end header
 
 @import 'media';

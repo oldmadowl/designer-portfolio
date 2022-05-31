@@ -37,9 +37,16 @@ body, html{
   overflow-x: hidden;
 }
 body{
-  display: flex;
-  flex-direction: column;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+  color: $text;
+  font-size: 16px;
+  line-height: 32px;
 }
-main{
-  flex-grow: 1;
+.container{
+  max-width: 1140px;
+  padding: 0 15px;
+}
+.wrapper{
+  max-width: 1920px;
 }
