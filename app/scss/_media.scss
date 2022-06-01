@@ -61,6 +61,35 @@
       box-shadow: 10px 10px 50px rgb(91, 87, 101);
     }
   }
+  .blog__item{
+    &:hover{
+      max-width: auto;
+      background-size: cover;
+      display: flex;
+      .blog__item-img{
+        display: none;
+      }
+      .blog__item-title{
+        color: #fff;
+      }
+      .blog__item-inner{
+        padding: 0 20px 30px;
+      }
+      .blog__item-date{
+        color: #fff;
+        margin-bottom: 2px;
+      }
+      &::after{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .blog__item{
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 650px){
@@ -86,6 +115,8 @@
     font-size: 20px;
   }
 }
+
+
 
 @media (min-width: 769px){
   .menu__list{
